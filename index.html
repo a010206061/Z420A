@@ -682,10 +682,7 @@
         <textarea id="aiDescInput" rows="2" placeholder="Detalle del entorno (opcional si subes fotografía)..."></textarea>
       </div>
 
-      <div class="field-group" id="keyFieldWrapper">
-        <label>API Key Gemini (Opcional para auditoría automática con IA):</label>
-        <input type="password" id="geminiKeyInput" placeholder="AIzaSy... (sin clave se guarda como reporte manual)" />
-      </div>
+ 
 
       <small id="aiStatusMsg" style="color:var(--teal); font-weight:800; display:none;"></small>
       <button type="button" class="btn-submit-ai" id="btnSubmitAi" onclick="submitAiReport()">✨ Procesar y Publicar Punto</button>
@@ -1426,7 +1423,7 @@
         ? 'Conservar señalética y mantenimiento preventivo del corredor.'
         : 'Intervención prioritaria de accesibilidad universal y balizamiento táctil.';
 
-      const apiKey = document.getElementById('geminiKeyInput').value.trim();
+      const apiKey = document.getElementById('geminiKeyInput')?.value.trim() || '';
       const base64Data = pendingCompressedPhoto ? pendingCompressedPhoto.split(',')[1] : null;
       let aiAudited = false;
 
