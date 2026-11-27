@@ -2,7 +2,7 @@
 
 **Reto 2 · Ciudad para todas y todos (ODS 11: Ciudades y comunidades sostenibles)**
 
-## 🌐 Aplicación Demostrable en Vivo
+## 🌐 Aplicación Demostrable 
 👉 **[ABRIR PROTOTIPO FUNCIONAL ](https://a010206061.github.io/Z420A/)**
 
 ---
